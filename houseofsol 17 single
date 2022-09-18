@@ -10,7 +10,7 @@
 
 <!--
  
-houseofsol #17 single muse variant using a heavily edited basecode by octomoosey @ tumblr
+houseofsol #18 single muse variant using a heavily edited basecode by octomoosey @ tumblr
  
 please do not remove this credit and please do not use this theme for commissions or giveaways. 
 
@@ -162,7 +162,7 @@ attribute:"title"
 
 <!--- ••• Image Variables ••• --->
 
-<meta name="image:sideimg" content="https://i.imgur.com/0E5osGr.png"/>
+<meta name="image:sideim" content="https://i.imgur.com/sfnbUbF.png"/>
 
 
 <!-- text variables -- where you will put in the text for certain aspects of your theme -->
@@ -623,7 +623,7 @@ sup, small, sub {
    
 #name {
 	position:fixed;
-	top:250px;	
+	top:320px;	
 	left:75px;
 	z-index:99999999;
 	width:200px;
@@ -915,7 +915,7 @@ ol.notes li.note blockquote a {
 	 width:265px;    
     text-align:left;
     left:72px;
-    margin-top:332px;
+    margin-top:402px;
     position:fixed;
     }
 
@@ -932,13 +932,12 @@ ol.notes li.note blockquote a {
 } 
  
 #sideimg {
-	 background-image: url('{image:sidebar}');
 	 background-repeat: no-repeat;
 	 position:fixed;
-	 top:130px;
+	 top:50px;
 	 left:75px;
 	 width:215px;
-	 height:150px;
+	 height:260px;
 	 }
 
 #sidebox {
@@ -947,7 +946,7 @@ ol.notes li.note blockquote a {
 	 font-family:'arial', sans-serif;
 	 text-transform:lowercase;
 	 padding:0 8px;
-	 top:260px;
+	 top:330px;
 	 left:75px;
 	 height:70px;
 	 width:200px;
@@ -964,7 +963,7 @@ ol.notes li.note blockquote a {
 #pagination {
     position:fixed;
     left:233px;
-	 top:333px;
+	 top:403px;
 	 padding:2px;
 	 background:transparent;
     font-size:9px;
@@ -1047,7 +1046,7 @@ ol.notes li.note blockquote a {
 
 <div id="sidebar">
 
-<div id="sideimg"><img src="{image:sideimg}"></div>
+<div id="sideimg"><img src="{image:sideim}"></div>
 
 <div id="sidebox">
 lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
