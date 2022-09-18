@@ -162,7 +162,7 @@ attribute:"title"
 
 <!--- ••• Image Variables ••• --->
 
-<meta name="image:sideimg" content="https://i.imgur.com/aoPLuPr.png"/>
+<meta name="image:sideim" content="https://i.imgur.com/sfnbUbF.png"/>
 
 
 <!-- text variables -- where you will put in the text for certain aspects of your theme -->
@@ -932,7 +932,6 @@ ol.notes li.note blockquote a {
 } 
  
 #sideimg {
-	 background-image: url('{image:sidebar}');
 	 background-repeat: no-repeat;
 	 position:fixed;
 	 top:50px;
@@ -1047,7 +1046,7 @@ ol.notes li.note blockquote a {
 
 <div id="sidebar">
 
-<div id="sideimg"><img src="{image:sideimg}"></div>
+<div id="sideimg"><img src="{image:sideim}"></div>
 
 <div id="sidebox">
 lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
