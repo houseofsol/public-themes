@@ -932,8 +932,6 @@ ol.notes li.note blockquote a {
 } 
  
 #sideimg {
-	 background-image: url('{image:sidebar}');
-	 background-repeat: no-repeat;
 	 position:fixed;
 	 top:75px;
 	 left:100px;
@@ -942,9 +940,11 @@ ol.notes li.note blockquote a {
 	 }
 	 
 #sideimg img {
-	-webkit-border-radius: 96px;
-    -moz-border-radius: 96px;
-	 border-radius: 96px;
+	 background-image: url('{image:sidebar}');
+	 background-repeat: no-repeat;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	 border-radius: 50%;
 }	 
 	 
 
