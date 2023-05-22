@@ -10,7 +10,7 @@
 
 <!--
  
-houseofsol #16 multi-muse variant using a heavily edited basecode by octomoosey @ tumblr
+houseofsol #18 multi-muse variant using a heavily edited basecode by octomoosey @ tumblr
  
 please do not remove this credit and please do not use this theme for commissions or giveaways. 
 
@@ -162,7 +162,7 @@ attribute:"title"
 
 <!--- ••• Image Variables ••• --->
 
-<meta name="image:sideimg" content="https://i.imgur.com/luheux6.png"/>
+<meta name="image:sideim" content="https://i.imgur.com/sfnbUbF.png"/>
 
 
 <!-- text variables -- where you will put in the text for certain aspects of your theme -->
@@ -478,7 +478,7 @@ h2 {
     line-height:30px;
     text-align:right;
     text-transform:uppercase;
-    margin-top:-10px;}
+    margin-top:0px;}
     
 h3 {
     font-size:26px;
@@ -576,6 +576,11 @@ img {
     margin-top:5px;
     margin-bottom:5px;}
     
+#container img {
+   height:auto;
+   max-width:100%;
+}    
+    
 .photoset {
 	max-width:100%;
 }
@@ -623,7 +628,7 @@ sup, small, sub {
    
 #name {
 	position:fixed;
-	top:250px;	
+	top:320px;	
 	left:75px;
 	z-index:99999999;
 	width:200px;
@@ -820,6 +825,16 @@ ol.notes li.note blockquote a {
 .asker a:hover {
 	color:{color:links hover};
 }     
+
+iframe#ask_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
+      
+iframe#submit_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
  
 /* ---••• Quote Posts •••--- */
  
@@ -915,7 +930,7 @@ ol.notes li.note blockquote a {
 	 width:265px;    
     text-align:left;
     left:72px;
-    margin-top:332px;
+    margin-top:402px;
     position:fixed;
     }
 
@@ -932,21 +947,13 @@ ol.notes li.note blockquote a {
 } 
  
 #sideimg {
-	 position:fixed;
-	 top:75px;
-	 left:100px;
-	 width:160px;
-	 height:160px;
-	 }
-	 
-#sideimg img {
-	 background-image: url('{image:sidebar}');
 	 background-repeat: no-repeat;
-	-webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-	 border-radius: 50%;
-}	 
-	 
+	 position:fixed;
+	 top:50px;
+	 left:75px;
+	 width:215px;
+	 height:250px;
+	 }
 
 #sidebox {
 	 font-size:11px;
@@ -954,7 +961,7 @@ ol.notes li.note blockquote a {
 	 font-family:'arial', sans-serif;
 	 text-transform:lowercase;
 	 padding:0 8px;
-	 top:260px;
+	 top:330px;
 	 left:75px;
 	 height:70px;
 	 width:200px;
@@ -971,7 +978,7 @@ ol.notes li.note blockquote a {
 #pagination {
     position:fixed;
     left:233px;
-	 top:333px;
+	 top:403px;
 	 padding:2px;
 	 background:transparent;
     font-size:9px;
@@ -1054,10 +1061,19 @@ ol.notes li.note blockquote a {
 
 <div id="sidebar">
 
-<div id="sideimg"><img src="{image:sideimg}"></div>
+<div id="sideimg"><img src="{image:sideim}"></div>
 
 <div id="sidebox">
-lorem ipsum dolor sit amet, consectetuer adipiscing <b>elit</b>. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis <i>porta urna</i>.
+lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
+<p>
+<ul>
+<li>Lorem ipsum dolor sit amet.
+<li>Consectetuer adipiscing elit.
+<li>Nam at tortor quis ipsum tempor aliquet.
+</ul>
+<p>Cum sociis <a href="http://demo.tumblr.com/">NATOQUE PENATIBUS</a> et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<blockquote>Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.</blockquote>
+<p>Suspendisse ac pede. Cras <a href="http://demo.tumblr.com/">TINCIDUNT PRETIUM</a> felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
 </div>
 
 
