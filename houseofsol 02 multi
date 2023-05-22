@@ -479,7 +479,7 @@ h2 {
     line-height:30px;
     text-align:right;
     text-transform:uppercase;
-    margin-top:-10px;}
+    margin-top:0px;}
     
 h3 {
     font-size:26px;
@@ -576,6 +576,11 @@ img {
     max-width:100%;
     margin-top:5px;
     margin-bottom:5px;}
+    
+#container img {
+   height:auto;
+   max-width:100%;
+}
     
 .photoset {
 	max-width:100%;
@@ -821,6 +826,17 @@ ol.notes li.note blockquote a {
 .asker a:hover {
 	color:{color:links hover};
 } 
+ 
+iframe#ask_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
+      
+iframe#submit_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
+ 
  
 /* ---••• Quote Posts •••--- */
  
