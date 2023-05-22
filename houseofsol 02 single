@@ -10,7 +10,7 @@
 
 <!--
  
-houseofsol #2 single muse variant using a heavily edited basecode by octomoosey @ tumblr
+houseofsol #5 multi muse variant using a heavily edited basecode by octomoosey @ tumblr
  
 please do not remove this credit and please do not use this theme for commissions or giveaways. 
 
@@ -162,8 +162,7 @@ attribute:"title"
 
 <!--- ••• Image Variables ••• --->
 
-<meta name="image:sidebar top" content="https://i.imgur.com/TO3W8Lh.png"/>
-<meta name="image:sidebar bottom" content="https://i.imgur.com/9euNlft.png"/>
+<meta name="image:sideimg" content="https://i.imgur.com/WmPAL5f.png"/>
 
 
 <!-- text variables -- where you will put in the text for certain aspects of your theme -->
@@ -236,7 +235,7 @@ ul#poptab li.active {
    list-style-type:none;
 }
 
-#verse {
+#muse {
    height:200px;
 	background-color: transparent;
 	padding-bottom:1px;
@@ -479,7 +478,7 @@ h2 {
     line-height:30px;
     text-align:right;
     text-transform:uppercase;
-    margin-top:-10px;}
+    margin-top:0px;}
     
 h3 {
     font-size:26px;
@@ -577,6 +576,11 @@ img {
     margin-top:5px;
     margin-bottom:5px;}
     
+#container img {
+   height:auto;
+   max-width:100%;
+}    
+    
 .photoset {
 	max-width:100%;
 }
@@ -625,7 +629,7 @@ sup, small, sub {
 #name {
 	position:fixed;
 	top:65px;	
-	left:60px;
+	left:50px;
 	z-index:99999999;
 	width:200px;
 	font-size:40px;
@@ -691,7 +695,7 @@ sup, small, sub {
     
 .postinfo a:hover {
 	color:{color:links hover};
-}
+}    
     
 .date {
 	float:left;
@@ -720,7 +724,7 @@ sup, small, sub {
 	
 .pinned a:hover {
 	color:{color:links hover};
-}
+}	
 
 .pinned .fa-thumbtack { 
 	margin-right:7px; 
@@ -738,9 +742,9 @@ sup, small, sub {
     color:{color:text};
     padding:0px 5px 0px 0px;}
     
-.tags a:hover {
+.tags a:hover{
 	color:{color:links hover};
-}
+}    
 {/block:PermalinkPage}
     
 /* ---••• Post Notes •••--- */  
@@ -761,7 +765,7 @@ ol.notes li.note a {
     
 ol.notes li.note a:hover {
 	color:{color:links hover};
-}
+}    
  
 ol.notes li.note img.avatar {
     vertical-align:-5px;
@@ -818,9 +822,19 @@ ol.notes li.note blockquote a {
     text-transform:uppercase;
     letter-spacing:2px;}  
     
-.asker a:hover {
-	color:{color:links hover};
-}  
+ .asker a:hover {
+	color:{color:links hover}; 
+ }     
+ 
+iframe#ask_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
+      
+iframe#submit_form { 
+        width: 475px;
+      min-height: 200px; 
+      } 
  
 /* ---••• Quote Posts •••--- */
  
@@ -903,21 +917,23 @@ ol.notes li.note blockquote a {
 
 #sidebar {
 	 position:fixed;
-	 left:50px;
-	 top:417px;
-	 height:20px;
-	 width:495px;
+	  left:45px;
+	 top:75px;
+	 height:296px;
+	 width:315px;
 	 padding:2px;
+	 border-right:1px solid #b2150d;
+	 border-left:1px dashed #096a79;
 	 }
 
  
 #nav {
 	 font-size:10px;	 
 	 font-family:'open sans', sans-serif;
-	 width:235px;    
+	 width:265px;    
     text-align:left;
     left:50px;
-    margin-top:10px;
+    margin-top:300px;
     position:fixed;
     }
 
@@ -933,47 +949,33 @@ ol.notes li.note blockquote a {
 	letter-spacing:1px;
 } 
  
-#sidebarimg-top {
-	 background-image: url('{image:sidebar top}');
+#sideimg {
+	 background-image: url('{image:sidebar}');
 	 background-repeat: no-repeat;
-	 border-top:1px dashed #b2150d;
-	 border-bottom:1px solid #b2150d;
 	 position:fixed;
+	 float:left;
 	 top:75px;
 	 left:50px;
-	 width:250px;
-	 height:50px;
-}
+	 width:125px;
+	 height:300px;
+	 }
 
-#sidebarimg-bottom {
-	 background-image: url('{image:sidebar bottom}');
-	 background-repeat: no-repeat;
-	 border-top:1px dashed #096a79;
-	 border-bottom:1px solid #096a79;
-	 position:fixed;
-	 top:375px;
-	 left:50px;
-	 width:250px;
-	 height:50px;
-} 
-
-#side-info {
+#sidebox {
 	 font-size:11px;
 	 text-align:left;
 	 font-family:'arial', sans-serif;
 	 text-transform:lowercase;
 	 padding:0 8px;
-	 top:126px;
-	 left:49px;
-	 height:248px;
-	 width:233px;
+	 top:75px;
+	 left:175px;
+	 height:298px;
+	 width:175px;
 	 overflow-y:scroll;
 	 overflow-x:hidden;
 	 margin-bottom:5px;
 	 display:inline;
 	 position:fixed;
-	 border-left:1px dashed #096a79;
-	 border-right:1px solid #b2150d;
+	 float:right;
 }
  
  
@@ -981,8 +983,8 @@ ol.notes li.note blockquote a {
  
 #pagination {
     position:fixed;
-    left:235px;
-	 top:428px;
+    left:315px;
+	 top:379px;
 	 padding:2px;
 	 background:transparent;
     font-size:9px;
@@ -1065,10 +1067,9 @@ ol.notes li.note blockquote a {
 
 <div id="sidebar">
 
-<div id="sidebarimg-top"><img src="{image:sidebar top}"></div>
+<div id="sideimg"><img src="{image:sideimg}"></div>
 
-
-<div id="side-info">
+<div id="sidebox">
 lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
 <p>
 <ul>
@@ -1081,12 +1082,11 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 <p>Suspendisse ac pede. Cras <a href="http://demo.tumblr.com/">TINCIDUNT PRETIUM</a> felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
 </div>
 
-<div id="sidebarimg-bottom"><img src="{image:sidebar bottom}"></div>
 
 <div id="nav">
 <a title="refresh" href="/"><span class="fas fa-cogs" style="font-size:125%"></span></a>
 <a href="#?w=750" rel="01" class="poplight" style="font-size:12px" title="site map" >01.</a>
-<a href="#?w=750" rel="02" class="poplight" style="font-size:12px" title="verses" >02.</a>
+<a href="#?w=750" rel="02" class="poplight" style="font-size:12px" title="muses" >02.</a>
 </div>   
 
 <div id="pagination">
@@ -1220,10 +1220,8 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
      <li class="active" style="width:100px">01. ask</li>
      
      <li style="width:100px">02. rules</li>
-		
-     <li style="width:100px">03. bio</li>
-     
-     <li style="width:100px">04. links &amp; tags</li>
+		    
+     <li style="width:100px">03. links &amp; tags</li>
      
 </ul>  
 
@@ -1240,32 +1238,6 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 
 <li>
 <center><h4>guidelines</h4></center>
-<br />
-<h5>section one</h5>
-<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
-<p>
-<br />
-<h5>section two</h5>
-<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
-<p>
-<br />
-<h5>section three</h5>
-<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
-<p>
-<br />
-<h5>section four</h5>
-<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
-<p>
-<br />
-<h5>section five</h5>
-<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
-<p>
-<br />
-<br />
-</li>
-
-<li>
-<center><h4>biography</h4></center>
 <br />
 <h5>section one</h5>
 <p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. aliquam mattis porta urna. maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. aenean id massa ut lacus molestie porta. curabitur sit amet quam id libero suscipit venenatis.
@@ -1379,15 +1351,15 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 <div id="popmenu2">
 
 <ul id="poptabs">
-     <li class="active" style="width:100px">01. canon</li>
+     <li class="active" style="width:100px">01. screen</li>
      
-     <li style="width:100px">02. alt canon</li>
+     <li style="width:100px">02. page</li>
 		
-     <li style="width:100px">03. fandom</li>
+     <li style="width:100px">03. original</li>
      
-     <li style="width:100px">04. alternate</li>
+     <li style="width:100px">04. request</li>
      
-     <li style="width:100px">05. misc.</li>
+     <li style="width:100px">05. private</li>
      
 </ul>  
 
@@ -1397,19 +1369,19 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 
 <ul id="poptab">
 <li class="active">
-<center><h4>canon</h4></center>
-<div id="verse">
+<center><h4>on the screen</h4></center>
+<div id="muse">
 <div id="left"><img src="https://i.imgur.com/eqOB6rd.png"></div>
-<b><a href="/" style="font-size:12px">verse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 </div>
 <br />
 <br />
-<div id="verse">
+<div id="muse">
 <div id="right"><img src="https://i.imgur.com/brdWTD4.png"></div>
-<b><a href="/" style="font-size:12px">verse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
@@ -1422,38 +1394,38 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 
 </div>
 
-<center><h4>alternate canon</h4></center>
-<div id="verse">
+<center><h4>on the page</h4></center>
+<div id="muse">
 <div id="left"><img src="https://i.imgur.com/eqOB6rd.png"></div>
-<b><a href="/" style="font-size:12px">verse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 </div>
 <br />
 <br />
-<div id="verse">
+<div id="muse">
 <div id="right"><img src="https://i.imgur.com/brdWTD4.png"></div>
-<b><a href="/" style="font-size:12px">verse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 </div></li>
 
 <li>
-<center><h4>fandom</h4></center>
-<div id="verse">
+<center><h4>original characters</h4></center>
+<div id="muse">
 <div id="left"><img src="https://i.imgur.com/eqOB6rd.png"></div>
-<b><a href="/" style="font-size:12px">verse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 </div>
 <br />
 <br />
-<div id="verse">
+<div id="muse">
 <div id="right"><img src="https://i.imgur.com/brdWTD4.png"></div>
-<b><a href="/" style="font-size:12px">verse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
@@ -1467,19 +1439,19 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 
 </div>
 
-<h4>alternate</h4>
-<div id="verse">
+<h4>by request</h4>
+<div id="muse">
 <div id="left"><img src="https://i.imgur.com/eqOB6rd.png"></div>
-<b><a href="/" style="font-size:12px">verse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 </div>
 <br />
 <br />
-<div id="verse">
+<div id="muse">
 <div id="right"><img src="https://i.imgur.com/brdWTD4.png"></div>
-<b><a href="/" style="font-size:12px">verse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
@@ -1487,19 +1459,19 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
 </li>
 
 <li>
-<center><h4>misc.</h4></center>
-<div id="verse">
+<center><h4>private</h4></center>
+<div id="muse">
 <div id="left"><img src="https://i.imgur.com/eqOB6rd.png"></div>
-<b><a href="/" style="font-size:12px">verse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse one</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 </div>
 <br />
 <br />
-<div id="verse">
+<div id="muse">
 <div id="right"><img src="https://i.imgur.com/brdWTD4.png"></div>
-<b><a href="/" style="font-size:12px">verse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+<b><a href="/" style="font-size:12px">muse two</a></b> &mdash; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
