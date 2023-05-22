@@ -478,7 +478,7 @@ h2 {
     line-height:30px;
     text-align:right;
     text-transform:uppercase;
-    margin-top:-10px;}
+    margin-top:0px;}
     
 h3 {
     font-size:26px;
@@ -575,6 +575,11 @@ img {
     max-width:100%;
     margin-top:5px;
     margin-bottom:5px;}
+    
+#cbox img {
+   height:auto;
+   max-width:100%;
+}    
     
 .photoset {
 	max-width:100%;
@@ -845,6 +850,16 @@ ol.notes li.note blockquote a {
 .asker a:hover {
 	color:{color:links hover};
 }     
+
+iframe#ask_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
+      
+iframe#submit_form { 
+        width: 475px;
+      min-height: 200px; 
+      }
  
 /* ---••• Quote Posts •••--- */
  
@@ -1152,9 +1167,9 @@ lorem ipsum dolor sit amet, consectetuer adipiscing elit. aliquam nisi lorem, pu
             <ul class="tab-links">
                 <li class="active" style="margin-left:-30px">
 					 <a title="refresh" href="/"><span class="fas fa-cogs" style="font-size:125%"></span></a></li>
-	 				 <a href="#tab2" title="questions" >01.</a>
-					 <a href="#tab3" title="site map">02.</a>
-					 <a href="#tab4" title="muses" >03.</a>
+	 				 <a href="#tab2" style="font-size:12px" title="questions" >01.</a>
+					 <a href="#tab3" style="font-size:12px" title="site map">02.</a>
+					 <a href="#tab4" style="font-size:12px" title="muses" >03.</a>
 			</ul>
         </div>
 </div>   
